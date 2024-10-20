@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda de Eventos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between; /* Alinha as logos nas extremidades */
+      align-items: center; /* Centraliza verticalmente o conteúdo */
+      padding: 10px 0;
+    }
+
+    .header img {
+      max-width: 100px; /* Define o tamanho máximo das logos */
+      height: auto; /* Mantém a proporção das logos */
+    }
+
+    h1 {
+      flex: 1; /* O título ocupa o espaço entre as duas logos */
+      text-align: center;
+      color: #333;
+    }
+
+    /* Seção de cada mês */
+    .month-section {
+      margin-bottom: 40px;
+    }
+
+    .month-title {
+      font-size: 24px;
+      color: #0056b3;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .event {
+      display: flex; /* Layout em linha para imagem e informações */
+      background-color: #fff;
+      margin: 20px 0;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .event img {
+      max-width: 200px; /* Define a largura máxima da imagem */
+      height: auto; /* Mantém a proporção da imagem */
+      border-radius: 10px;
+      margin-right: 20px; /* Espaço entre a imagem e as informações */
+    }
+
+    .event-info {
+      flex: 1; /* Ocupar o espaço restante ao lado da imagem */
+      padding: 10px 0;
+    }
+
+    .event h2 {
+      color: #0056b3;
+    }
+
+    .event p {
+      color: #555;
+    }
+
+    .event small {
+      display: block;
+      color: #888;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Estilos responsivos para telas menores */
+    @media (max-width: 768px) {
+      .event {
+        flex-direction: column; /* Colocar imagem acima das informações */
+        align-items: center;
+      }
+
+      .event img {
+        margin-right: 0; /* Remover margem à direita quando empilhar */
+        margin-bottom: 15px; /* Adicionar margem abaixo da imagem */
+        max-width: 100%; /* Fazer a imagem ocupar a largura total em telas pequenas */
+      }
+
+      .header {
+        flex-direction: column; /* Alinha as logos e o título em colunas em telas pequenas */
+        text-align: center;
+      }
+
+      .header img {
+        margin-bottom: 10px; /* Adiciona espaçamento entre as logos em telas pequenas */
+      }
+
+      h1 {
+        margin-bottom: 10px; /* Espaço extra abaixo do título no mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Cabeçalho com as logos e o título -->
+    <div class="header">
+      <img src="AD AFUÁ.png" alt="Logo Esquerda">
+      <h1>Agenda de Eventos da Igreja</h1>
+      <img src="COMIEADEPA.png" alt="Logo Direita">
+    </div>
+
+    <!-- Seção de Outubro -->
+    <div class="month-section">
+      <h2 class="month-title">Outubro 2024</h2>
+
+      <!-- Evento 1 de Outubro -->
+      <div class="event">
+        <img src="galileia.jpg" alt="Cartaz do Evento de Outubro">
+        <div class="event-info">
+          <h2>Culto de Arrecadação | Congregação Nova Galileia</h2>
+          <p>Programação para levantar recursos para finalizar a obra para Inauguração </p>
+          <small>Data: 19 de Outubro </small>
+          <small>Local: Congregação Nova Galileia - Rio Aningau</small>
+        </div>
+      </div>
+      <!-- Evento 2 de Outubro -->
+      <div class="event">
+        <img src="NOVA JERUSALÉM.png" alt="Cartaz do Evento de Outubro">
+        <div class="event-info">
+          <h2>41 Anos da Congregação e Inauguração da Casa Pastoral e Refeitório</h2>
+          <p>Festa de Inauguração e Aniversário da Congregação </p>
+          <small>Data: 26 e 27 de Outubro </small>
+          <small>Local: Congregação Nova Jerusalém - Rio Panacalhau</small>
+        </div>
+    </div>
+
+    <!-- Seção de Novembro -->
+    <div class="month-section">
+      <h2 class="month-title">Novembro 2024</h2>
+
+      <!-- Evento 1 de Novembro -->
+      <div class="event">
+        <img src="110 anos ad oficial.png" alt="Cartaz do Evento de Outubro">
+        <div class="event-info">
+          <h2>110 Anos da Assembleia de Deus em Afuá</h2>
+          <p>Aniversário da Igreja com a presença de Vários Campos da Supervisão</p>
+          <small>Data: 10 de Novembro</small>
+          <small>Local: Igreja Central</small>
+        </div>
+      </div>
+
+      <!-- Outros eventos -->
+       <!-- Evento 2 de Novembro -->
+      <div class="event">
+        <img src="OBREIROS.jpg" alt="Cartaz do Evento de Outubro">
+        <div class="event-info">
+          <h2>Congresso de Obreiros</h2>
+          <p>Festa de Obreiros na Congregação Monte Sinai</p>
+          <small>Data: 16 de Novembro</small>
+          <small>Local: Congregação Monte Sinai, Bairro do Capim Marinho</small>
+        </div>
+      </div>
+
+       <!-- Evento 3 de Novembro -->
+       <div class="event">
+        <img src="maranata.jpg" alt="Cartaz do Evento de Outubro">
+        <div class="event-info">
+          <h2>Congresso Unificado</h2>
+          <p>Festa dos Departamentos de Criança, Jovens, Círculo de Oração e Obreiros</p>
+          <small>Data: 24 e 25 de Novembro</small>
+          <small>Local: Congregação Maranata, Bairro do Capim Marinho</small>
+        </div>
+      </div>
+
+      <!-- Evento 4 de Novembro -->
+      <div class="event">
+        <img src="filadeldia.jpg" alt="Cartaz do Evento de Outubro">
+        <div class="event-info">
+          <h2>Festa de Crianças</h2>
+          <p>Congresso Infaltil na Congregação</p>
+          <small>Data: 30 de Novembro</small>
+          <small>Local: Congregação Filadélfia, Rio Cajary</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção de Dezembro -->
+    <div class="month-section">
+      <h2 class="month-title">Dezembro 2024</h2>
+
+      <!-- Evento 1 de Dezembro -->
+      <div class="event">
+        <img src="DIADAF.jpg" alt="Cartaz do Evento de Outubro">
+        <div class="event-info">
+          <h2>Congresso DIADAF</h2>
+          <p>Festa Geral do Departamento Infantil</p>
+          <small>Data: 06 e 07 de Dezembro</small>
+          <small>Local: Templo Central</small>
+        </div>
+      </div>
+
+      <!-- Outros eventos -->
+       <!-- Evento 2 de Dezembro -->
+      <div class="event">
+        <img src="galileia.jpg" alt="Cartaz do Evento de Outubro">
+        <div class="event-info">
+          <h2>Inauguração da Congregação Nova Galileia</h2>
+          <p>Cerimônia de Inauguração da Casa de Oração</p>
+          <small>Data: 14 de Dezembro</small>
+          <small>Local: Congregação Nova Galileia, Rio Aningau</small>
+        </div>
+      </div>
+
+       <!-- Evento 3 de Dezembro -->
+       <div class="event">
+        <img src="ceia.jpg" alt="Cartaz do Evento de Outubro">
+        <div class="event-info">
+          <h2>Culto da Virada</h2>
+          <p>A grande Ceia e Culto Administrativo</p>
+          <small>Data: 31 de Dezembro</small>
+          <small>Local: Templo Central</small>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2024 Igreja Evangélica - Todos os direitos reservados.
+    </footer>
+
+  </div>
+
+</body>
+</html>
